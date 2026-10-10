@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Copy FxTwitter Link",
+  "version": "1.0.0",
+  "description": "Adds a button to each tweet that copies its link as an fxtwitter.com URL.",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
